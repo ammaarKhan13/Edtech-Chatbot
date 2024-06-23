@@ -1,0 +1,8 @@
+langchain_community
+langchain_google_genai
+python-dotenv
+langchain_huggingface
+faiss-cpu
+google-generativeai
+langchain_core
+streamlit
