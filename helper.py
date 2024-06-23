@@ -8,12 +8,12 @@ from langchain_community.document_loaders.csv_loader import CSVLoader
 import google.generativeai as palm
 from langchain_core.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
-
+import streamlit as st
+api_key=st.secrets["GOOGLE_API_KEY"]
 
 vectordb_file_path = "faiss_index"
 
-load_dotenv()
-api_key=os.environ["GOOGLE_API_KEY"]
+
 llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key=api_key)
 
 
