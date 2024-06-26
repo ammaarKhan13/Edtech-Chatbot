@@ -66,6 +66,7 @@ This repository contains an Edtech Chatbot that provides answers to questions ba
 ## Deployment
 
 The Edtech Chatbot is deployed on a Streamlit server, which makes it accessible via a web browser. This deployment ensures that users can easily interact with the chatbot and get responses based on the dataset.
+Here is the link: https://edtech-chatbot-ammaarkhan.streamlit.app/
 
 ## Contributing
 
