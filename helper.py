@@ -19,7 +19,7 @@ llm = GoogleGenerativeAI(model="models/text-bison-001", google_api_key=api_key)
 
 embeddings = HuggingFaceEmbeddings()
 def create_db():
-    loader=CSVLoader(file_path="data.csv", source_column="prompt")
+    loader=CSVLoader(file_path="data.csv", source_column="prompt",encoding='ISO-8859-1')
     data=loader.load()
     db = FAISS.from_documents(data, embeddings) 
     db.save_local(vectordb_file_path)
